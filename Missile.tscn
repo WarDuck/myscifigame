@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Missile.gd" type="Script" id=1]
+[ext_resource path="res://missile.png" type="Texture" id=2]
+[ext_resource path="res://Explosion.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.46532, 11.1612 )
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.851429 )
+colors = PoolColorArray( 0.221786, 0.814615, 0.996094, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+
+[sub_resource type="ParticlesMaterial" id=4]
+flag_disable_z = true
+direction = Vector3( -1, 0, 0 )
+spread = 5.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 500.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 2.0
+color_ramp = SubResource( 3 )
+
+[node name="Missile" type="Area2D"]
+script = ExtResource( 1 )
+Explosion = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.807728, -0.0416899 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( -10.7093, -0.15749 )
+amount = 200
+local_coords = false
+process_material = SubResource( 4 )
+[connection signal="body_entered" from="." to="." method="_on_Missile_body_entered"]
