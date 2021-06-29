@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Menu.gd" type="Script" id=1]
+
+[node name="MarginContainer" type="MarginContainer"]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 257.0
+margin_bottom = 409.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 157.0
+margin_bottom = 309.0
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+margin_top = 94.0
+margin_right = 157.0
+margin_bottom = 114.0
+text = "Play"
+
+[node name="ServerButton" type="Button" parent="VBoxContainer"]
+margin_top = 118.0
+margin_right = 157.0
+margin_bottom = 138.0
+text = "Start a server"
+
+[node name="JoinButton" type="Button" parent="VBoxContainer"]
+margin_top = 142.0
+margin_right = 157.0
+margin_bottom = 162.0
+text = "Join a game"
+
+[node name="IpEdit" type="LineEdit" parent="VBoxContainer"]
+margin_top = 166.0
+margin_right = 157.0
+margin_bottom = 190.0
+text = "127.0.0.1"
+
+[node name="StartGameButton" type="Button" parent="VBoxContainer"]
+margin_top = 194.0
+margin_right = 157.0
+margin_bottom = 214.0
+text = "Start game"
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/ServerButton" to="." method="_on_ServerButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/JoinButton" to="." method="_on_JoinButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_StartGameButton_pressed"]

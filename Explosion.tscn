@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Explosion.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0.00571429, 0.92 )
+colors = PoolColorArray( 0.964844, 0.91414, 0.501266, 1, 0.632813, 0.00247192, 0.00247192, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 30.0
+initial_velocity_random = 0.3
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 5.0
+color_ramp = SubResource( 2 )
+
+[node name="Particles2D" type="Particles2D"]
+emitting = false
+amount = 200
+lifetime = 3.0
+one_shot = true
+explosiveness = 0.8
+process_material = SubResource( 3 )
+script = ExtResource( 1 )
