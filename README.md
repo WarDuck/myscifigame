@@ -4,15 +4,14 @@ It's a top-down starship battle game that should be played against other players
 
 Mechanics
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PqjFi2zMzyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/PqjFi2zMzyU"
 
 more mechanics
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4Y3fuBx_yEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/4Y3fuBx_yEM"
 
 return to main menu on death
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CJgVba-QdnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/CJgVba-QdnY"
 
 Multiplayer bug
 
