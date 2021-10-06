@@ -15,4 +15,4 @@ https://www.youtube.com/embed/CJgVba-QdnY"
 
 Multiplayer bug
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/brW0Pt8eDzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/brW0Pt8eDzo
